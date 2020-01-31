@@ -5,7 +5,8 @@
     </section>
     <section class="existing-posts">
       <h1>Existing Posts</h1>
-      <PostList is-admin />
+      <PostList is-admin :posts="loadedPosts"/>
+
     </section>
   </div>
 </template>

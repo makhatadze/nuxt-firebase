@@ -12,6 +12,8 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../assets/css/tailwind.css'
 
+import '../assets/styles/main.css'
+
 import _77068119 from '../layouts/admin.vue'
 import _6f6c098b from '../layouts/default.vue'
 

@@ -133,7 +133,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {"baseUrl":"https://nuxt-blog-67fb3.firebaseio.com"}
     }
     // Only set once
     if (context.req) {

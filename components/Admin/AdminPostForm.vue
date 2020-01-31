@@ -21,11 +21,8 @@
     </form>
 </template>
 <script>
-    import AppButton from "../UI/AppButton";
-    import AppControlInput from "../UI/AppControlInput";
 
     export default {
-        components: {AppButton, AppControlInput},
         props: {
             post: {
                 type: Object,
