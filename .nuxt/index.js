@@ -13,6 +13,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_corecomponents_4963358a from 'nuxt_plugin_corecomponents_4963358a' // Source: ../plugins/core-components.js (mode: 'all')
+import nuxt_plugin_datefilter_f4b26092 from 'nuxt_plugin_datefilter_f4b26092' // Source: ../plugins/date-filter.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -171,6 +172,10 @@ async function createApp (ssrContext) {
 
   if (typeof nuxt_plugin_corecomponents_4963358a === 'function') {
     await nuxt_plugin_corecomponents_4963358a(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_datefilter_f4b26092 === 'function') {
+    await nuxt_plugin_datefilter_f4b26092(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
